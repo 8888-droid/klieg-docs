@@ -1,0 +1,36 @@
+---
+title: "Signals and theses"
+description: "Understand why a signal appeared and how its events unfolded."
+---
+
+A **thesis** is a caller's statement about a particular token. A **signal** presents the available context around it: who posted, when, what is known about the position, and what happened next.
+
+When several callers discuss one token, their theses remain separate. Token aggregation should not hide differences in reasoning or publication time.
+
+## What to inspect first
+
+| Field | How to interpret it |
+| --- | --- |
+| Caller and platform | Where the post came from and who it is attributed to |
+| Call time | When the thesis appeared; compare with observation and wallet-action times |
+| Position | A platform observation or independent confirmation: check the label |
+| Score and reasons | Reasons for prioritizing the signal, not a probability of profit |
+| Current and peak outcome | Available post-call measurements, with their provenance |
+| Lifecycle | Recorded updates, reductions, and exits |
+
+## Call, buy, sell, and call+buy
+
+- **Call**: a token-related post exists.
+- **Buy**: an independently confirmed purchase by a linked wallet exists.
+- **Sell**: an independently confirmed sale exists.
+- **Call+buy**: a post and confirmed purchase are matched by caller, token, and an allowed time window.
+
+A platform's statement that a caller bought does not automatically become a confirmed buy. See the [evidence model](/en/concepts/evidence) for details.
+
+## Signal Dossier
+
+Open the Signal Dossier to inspect the sequence: original thesis, observed opening position, independent check, fixed-horizon outcomes, and subsequent changes. A drop in a displayed position may trigger an investigation; confirmation of a sale requires the relevant verified event.
+
+## Filters and pause
+
+Signals filters operate on the loaded set of signals. They are not a search over the entire archive. Pausing freezes display order while updates continue arriving; pending changes can be applied after you inspect the list.

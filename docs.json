@@ -1,0 +1,48 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Klieg Wire",
+  "description": "Follow the callers. Understand the thesis. Verify the wallet activity.",
+  "colors": {
+    "primary": "#D65F16",
+    "light": "#F0C66A",
+    "dark": "#B64D11"
+  },
+  "logo": {
+    "light": "/assets/logo-light.svg",
+    "dark": "/assets/logo-dark.svg"
+  },
+  "favicon": "/assets/favicon.svg",
+  "navigation": {
+    "languages": [
+      {
+        "language": "ru",
+        "navbar": {
+          "primary": { "type": "button", "label": "Открыть Klieg", "href": "https://beta.klieg.net" }
+        },
+        "groups": [
+          { "group": "Знакомство", "pages": ["ru/introduction", "ru/idea", "ru/quickstart"] },
+          { "group": "Продукт", "pages": ["ru/product/overview", "ru/product/cohorts", "ru/product/signals", "ru/product/callers", "ru/product/tokens", "ru/product/research"] },
+          { "group": "Как читать данные", "pages": ["ru/concepts/evidence", "ru/concepts/coverage"] },
+          { "group": "Доступ и тарифы", "pages": ["ru/access/pricing", "ru/access/demo", "ru/access/standard", "ru/access/gold"] },
+          { "group": "Смарт-контракты", "pages": ["ru/contracts/addresses", "ru/contracts/permissions"] },
+          { "group": "Справка", "pages": ["ru/help/security", "ru/help/faq", "ru/glossary", "ru/roadmap", "ru/changelog"] }
+        ]
+      },
+      {
+        "language": "en",
+        "navbar": {
+          "primary": { "type": "button", "label": "Open Klieg", "href": "https://beta.klieg.net" }
+        },
+        "groups": [
+          { "group": "Start here", "pages": ["en/introduction", "en/idea", "en/quickstart"] },
+          { "group": "Product", "pages": ["en/product/overview", "en/product/cohorts", "en/product/signals", "en/product/callers", "en/product/tokens", "en/product/research"] },
+          { "group": "Understanding the data", "pages": ["en/concepts/evidence", "en/concepts/coverage"] },
+          { "group": "Access and pricing", "pages": ["en/access/pricing", "en/access/demo", "en/access/standard", "en/access/gold"] },
+          { "group": "Smart contracts", "pages": ["en/contracts/addresses", "en/contracts/permissions"] },
+          { "group": "Reference", "pages": ["en/help/security", "en/help/faq", "en/glossary", "en/roadmap", "en/changelog"] }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+---
+title: "Your first session"
+description: "Connect a wallet, activate access, and build your first caller cohort."
+---
+
+<Steps>
+  <Step title="Open the app">
+    Visit [beta.klieg.net](https://beta.klieg.net). To purchase a pass, use an EVM wallet with USDC on **Base Mainnet** and a small amount of ETH on the same network for gas. Base's chain ID is **8453**.
+  </Step>
+  <Step title="Connect and sign in">
+    Select your wallet and sign the login message. This signature proves control of the address, does not transfer funds, and requires no network fee. If the address already has an active pass or granted access, the app checks it.
+  </Step>
+  <Step title="Choose a pass if needed">
+    [Demo](/en/access/demo) provides 7 days, [Standard](/en/access/standard) provides 30 days, and [Gold](/en/access/gold) provides non-expiring access. Demo and Standard time starts at purchase. Compare [pricing and rules](/en/access/pricing) before confirming.
+  </Step>
+  <Step title="Confirm payment in your wallet">
+    The app displays a fresh contract quote. Approve the required USDC amount for the selected contract, then confirm the purchase. These are separate actions; approving USDC alone does not create a pass. A separate approval may be unnecessary if an adequate allowance already exists.
+  </Step>
+  <Step title="Wait for confirmation">
+    After the purchase is confirmed, the app checks onchain access again and promotes the current session into the portal. If entry does not update, check the purchase status, network, and wallet address using the [FAQ](/en/help/faq).
+  </Step>
+  <Step title="Build your caller circle">
+    Start with Overview and the Callers directory. Create a [caller cohort](/en/product/cohorts), add profiles you want to follow, and switch from Global to your cohort. Open a token or signal and inspect its evidence.
+  </Step>
+</Steps>
+
+## Purchasing before signing in
+
+The access screen includes **Mint directly without signing in**. This lets you purchase a pass without first signing a login message. Protected portal pages still require proof of wallet ownership.
+
+## Use the correct address
+
+Your pass belongs to an EVM wallet address on Base. Signing in with another EVM address or a Solana wallet does not transfer the pass, caller cohorts, or settings. Access payments stay on Base even when you research tokens on another network.
+
+Use the [official contract directory](/en/contracts/addresses) to check the spender address when approving USDC.

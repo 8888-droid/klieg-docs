@@ -1,0 +1,75 @@
+---
+title: "Официальные адреса"
+description: "Контракты доступа Klieg Wire и платёжный USDC в сети Base."
+---
+
+Все перечисленные контракты доступа находятся в **Base Mainnet**, chain ID **8453**. Они относятся к пропускам Klieg, а не к токенам, которые вы исследуете в приложении.
+
+## Актуальные пропуски
+
+**Demo · KliegDemoPass**
+
+```text wrap
+0xE8E2F29c877526Ee04B8fe80a321F5732A6C250b
+```
+
+[Контракт Demo в BaseScan](https://basescan.org/address/0xE8E2F29c877526Ee04B8fe80a321F5732A6C250b).
+
+**Standard V2 · KliegAccessPassV2**
+
+```text wrap
+0xf6af9A1c218B2ef8f0075043c9D071ee5A29091c
+```
+
+[Контракт Standard V2 в BaseScan](https://basescan.org/address/0xf6af9A1c218B2ef8f0075043c9D071ee5A29091c).
+
+**Gold · KliegGoldSupporter**
+
+```text wrap
+0x5Eb551CBe65b23b26E319d07696140a768BC0597
+```
+
+[Контракт Gold в BaseScan](https://basescan.org/address/0x5Eb551CBe65b23b26E319d07696140a768BC0597).
+
+## Платёжный токен
+
+Используется USDC в Base, **6 знаков после запятой**:
+
+```text wrap
+0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913
+```
+
+[Открыть USDC в BaseScan](https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913).
+
+При покупке приложение запрашивает разрешение расходовать USDC у выбранного **контракта пропуска**. Это отличается от разрешения на передачу самого NFT. USDC в другой сети не оплачивает покупку в Base.
+
+## Архив: Standard V1
+
+```text wrap
+0x9646409d9B18E8A06aB37913218d13e87348FFBf
+```
+
+[Открыть V1 в BaseScan](https://basescan.org/address/0x9646409d9B18E8A06aB37913218d13e87348FFBf).
+
+Продажи и продления V1 закрыты. Контракт сохраняется для ранее оплаченного доступа; он не является адресом для новых покупок. Закрытие выполнено на блоке **50 911 523** в [этой транзакции](https://basescan.org/tx/0xdcf20cdf074cbad49c79585a4d96925d04bb00f48ee503404af7e466fcdfe1e0).
+
+## Проверка состояния
+
+Наличие кода, цены и режимы продажи независимо сверены **7 сентября 2026 года** на блоке [50 999 814](https://basescan.org/block/50999814), время блока **13:49:35 UTC**. Адреса Demo, Standard V2, Gold и USDC также совпали с публичной конфигурацией приложения.
+
+| Контракт | Цена на момент проверки | Продажа | Пауза |
+| --- | --- | --- | --- |
+| Demo | 1 USDC | Public | Нет |
+| Standard V2 | 5 USDC | Public | Нет |
+| Gold | 1 000 USDC за единицу | Public | Нет |
+| Standard V1 | Новые покупки недоступны | Closed | Нет |
+
+Эта таблица фиксирует состояние указанного блока. Перед оплатой ориентируйтесь на свежую котировку и доступность в приложении.
+
+## Проверка исходного кода
+
+Для Demo, Standard V2 и Gold в записях развёртывания зафиксирована проверка Sourcify с результатом **exact_match**. Проверка соответствия исходного кода байткоду не равна независимому аудиту безопасности.
+
+Транзакции создания: [Demo](https://basescan.org/tx/0xbe971dc4b6dd29c5fdc07cfe5de5f1899270c2020dc3173ec2d94bd8300a97b3), [Standard V2](https://basescan.org/tx/0x0967a44a3b96f44ca8c84e91170ed0a44d3599789a81457f75921ac01ef556c9), [Gold](https://basescan.org/tx/0x35d34e43c334a3c064b364fca82d354ccd53697a97e46149cd0c11bcb451c547).
+
+Полномочия изменения параметров описаны [отдельно](/ru/contracts/permissions).

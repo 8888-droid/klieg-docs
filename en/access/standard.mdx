@@ -1,0 +1,37 @@
+---
+title: "Standard — 30 days"
+description: "Monthly access with renewal during the final seven days."
+---
+
+**Standard V2 costs 5 USDC for 30 days.** Each purchase pays for one period. New Standard purchases use the V2 contract.
+
+## First purchase
+
+Access starts immediately and lasts exactly 30 days. Your wallet receives a non-transferable NFT. Access duration is determined by the contract record, not merely the presence of the NFT or its wallet image.
+
+## Renewal
+
+Renewal opens when **no more than 7 days remain**, and is also available after expiry.
+
+- If Standard V2 is still active, 30 days are added to its existing expiry.
+- If it has expired, a new period starts at purchase.
+- Renewal is unavailable while more than 7 days remain.
+- You cannot buy several periods in one transaction or accumulate unlimited future time. The maximum horizon after renewal is 37 days.
+
+**Example:** renewing with 4 days left gives 34 days until expiry. Buying 2 days after expiry gives 30 days from the new purchase; the gap is not recovered.
+
+## Continuity
+
+The pass keeps the same token ID across later purchases. **ACCESS SINCE** refers to continuous Standard V2 access and restarts after a gap. It does not import Demo or Standard V1 time.
+
+## Cancellation, revocation, and pause
+
+The contract lets a holder end their subscription early, without an onchain refund. An authorized administrator can also shorten an active period through revocation. The NFT remains, and a later eligible purchase can start a new period.
+
+Pausing or closing sales blocks purchases and renewals but does not stop the clock on paid access. Holder cancellation is unavailable while paused; administrative revocation remains possible.
+
+## Legacy Standard V1
+
+V1 sales and renewals closed on September 5, 2026. Existing paid time is preserved within its recorded expiry. V2 is a separate contract; a new V2 purchase does not carry over unused V1 days.
+
+Check the [current and legacy addresses](/en/contracts/addresses). There are no automatic recurring payments.

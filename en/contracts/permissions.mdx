@@ -1,0 +1,38 @@
+---
+title: "Permissions and limits"
+description: "What administrators can change and which properties are fixed by the contracts."
+---
+
+Demo, Standard V2, and Gold are separate deployments without upgradeable proxies. Immutable code does not mean there is no administration: roles defined in the code can change particular parameters.
+
+## Administrative powers
+
+| Action | Demo | Standard V2 | Gold |
+| --- | --- | --- | --- |
+| Change price | Yes, without a delay | Yes, after at least 7 days | Yes, after at least 7 days |
+| Close or pause sales | Yes | Yes | Yes |
+| Change the recipient of future payments | Yes | Yes | Yes |
+| Invite-only sales | No | Yes | No |
+| End an active entitlement early | No | Yes, through a revocation role | No Gold revocation function |
+| Recover a pass to a new wallet | No | No | Through a separate delayed procedure |
+| Change the payment token | No | No | No |
+
+Price, sale, pause, and payment-recipient roles are separate from holding a pass. Purchasing an NFT does not grant these powers.
+
+## Administrative roles
+
+The default administrator controls grants of the roles defined by the contract. Default-admin transfer is a two-step process with a **2-day** delay. Operational roles exist separately: transferring the default administrator does not automatically transfer them.
+
+Gold has a separate **RECOVERY_ROLE**. It proposes a new address; after **48 hours**, that address must accept the pass within **7 days**. Pausing sales does not block recovery.
+
+## What pause means
+
+A pause blocks purchases and Standard renewals. It does not extend paid time or stop it counting down. Closing sales also does not cancel existing access entitlements.
+
+Standard nevertheless includes a separate administrative revocation power. A closed sale and a revoked holder entitlement are different states.
+
+## The NFT and access entitlement
+
+All three passes are non-transferable. Ordinary NFT transfers and transfer approvals are disabled. Demo and Standard expiry is checked separately from NFT ownership. An image or a token in your wallet is not a substitute for checking current access.
+
+Describing contract functions does not mean every action is exposed in the user interface. The complete address directory is [here](/en/contracts/addresses).

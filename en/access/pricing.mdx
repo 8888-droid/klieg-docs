@@ -1,0 +1,38 @@
+---
+title: "Pricing and access rules"
+description: "Demo, Standard, and Gold: price, duration, renewal, and wallet ownership."
+---
+
+All passes are paid for in **USDC on Base Mainnet**. They provide access to the current Klieg portal and differ in duration and usage rules. Access pricing is unrelated to the performance of tokens you research.
+
+| Pass | Price | Access | Renewal |
+| --- | --- | --- | --- |
+| [Demo](/en/access/demo) | **1 USDC** | 7 days from purchase | Once per address; no renewal |
+| [Standard V2](/en/access/standard) | **5 USDC** | 30 days per purchase | In the final 7 days or after expiry |
+| [Gold](/en/access/gold) | **1,000 USDC per support unit** | Non-expiring | Not required |
+
+Prices were checked on **September 7, 2026**, at Base block [50,999,814](https://basescan.org/block/50999814), with block time **13:49:35 UTC**. This is a dated snapshot, not a commitment that prices will never change. The app requests the current contract quote before purchase. Network fees are paid separately in ETH on Base and depend on network conditions and wallet actions.
+
+## Shared rules
+
+- A pass belongs to the purchasing wallet and cannot be sold or transferred like an ordinary NFT.
+- Demo and Standard time starts at purchase, not first use.
+- There are no automatic recurring charges. Standard renewal requires another purchase.
+- The NFT stays in the wallet after expiry, but an expired pass does not grant access.
+- Purchasing a pass does not grant administrative permissions or guarantee future feature releases.
+
+## Overlapping passes
+
+Demo, Standard, and preserved Standard V1 time do not add together. If several timed passes are active, the latest valid expiry applies.
+
+For example, purchasing Standard with 3 days left on Demo gives **30 days from the Standard purchase**, not 33 days. Gold provides access without an expiry date.
+
+## Price changes
+
+A new Standard or Gold price must be scheduled at least 7 days before it takes effect. Demo pricing can change without that delay. In every case, an outdated quote should not silently become a more expensive purchase: the app uses a maximum amount, a deadline, and a quote version.
+
+## Refunds and cancellation
+
+The contracts do not provide automatic payment refunds. Early Standard cancellation ends the remaining access without an onchain refund. This describes contract behavior; it does not replace separate service terms or applicable user rights.
+
+Check the [contract addresses](/en/contracts/addresses) and [administrative permissions](/en/contracts/permissions) before purchasing.
