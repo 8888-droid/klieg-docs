@@ -1,7 +1,7 @@
 # Klieg Wire documentation
 
 Bilingual product documentation for Mintlify: 22 Russian pages and 22 matching
-English pages. This private repository is the source for the public docs site.
+English pages. This public repository is the source for the public docs site.
 
 ## Mintlify connection
 
