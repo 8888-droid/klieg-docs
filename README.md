@@ -9,12 +9,13 @@ English pages. This public repository is the source for the public docs site.
 - Documentation branch: `codex/mintlify-bilingual-docs`.
 - Content root: repository root, where `docs.json` lives.
 - Leave **docs.json is in a subdirectory** disabled.
-- Intended custom domain: `docs.klieg.net`.
+- Public site: [docs.klieg.net](https://docs.klieg.net).
 
 Install the Mintlify GitHub App with **Only select repositories** and select only
 `klieg-docs`. No other repository is needed as context or as a dependency.
-Account connection and the custom domain are still pending; this repository's
-existence does not mean the public site has been deployed.
+The public site is live. On 2026-09-08, both `/ru/introduction` and
+`/en/introduction` returned HTTP 200 with a valid HTTPS certificate for
+`docs.klieg.net`.
 
 ## Editing
 
